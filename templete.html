@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+  <style type="text/css" media="screen">
+
+    body
+    {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+        font-size: 8pt;
+    }
+    label
+    {
+      font-weight: bold;
+      color: gray;
+      font-size: 7pt;
+    }
+    .container
+    {
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+
+    }
+
+    .left-side
+    {
+    
+      width: 29%;
+      height: 900px;
+      
+      display: inline-block;
+      
+    }
+
+    .right-side
+    {
+      width: 69%;
+      height: 900px;
+      
+      display: inline-block;
+      
+
+    }
+    .left-side-container
+    {
+      margin-top: 5%;
+    }
+    .tvx_logo img
+    {
+      height: 70px;
+      width: 300px;
+      float: right;
+    }
+   /* .logo img
+    {
+      margin-top: 10px;
+      height: 30px;
+      width: 20%;
+      
+    }
+    .logo
+    {
+      margin-bottom: 5%;
+    }*/
+    ul 
+    {
+      list-style: none;
+      margin-left: -10px;
+    }
+    .label-rs
+    {
+      font-size: 11pt;
+      font-weight: lighter;
+      color: black;
+    }
+    .label-ra
+    {
+      font-weight: lighter;
+    }
+    thead tr
+    {
+      background-color: gray;
+      color: white;
+      font-size: 7pt;
+    }
+    table
+    {
+      width: 100%;
+      
+    }
+     tr, td, th
+    {
+      border-bottom: 1px solid #c3c2c2;
+      border-right: 1px solid #c3c2c2;
+      
+    }
+    table td
+    {
+      padding: 2px;
+
+    }
+    table
+    {
+      border-collapse: collapse;
+    }
+    .right-side ul
+    {
+      margin-left: -40px;
+    }
+  </style>
+  <!--793.700787402 X 1122.519685039-->
+  <div class="container">
+    <div class="tvx_logo">
+      <img src="img/logo.jpg" alt="">
+    </div>
+    
+    <div class="left-side">
+    <div class="logo">
+      <img src="'.$ra_logo.'">
+    </div>
+      <div class="left-side-container">
+        <label class="label-rs">'.$rs_ra.'</label><br><br>
+
+        
+        <UL>
+          <li><label><label>DOMICILIO</label></label></li>
+          <li>'.$ra_direccion.'</li>
+          <li>Col. '.$ra_col.' </li>
+          <li>'.$ra_ciu.' '.", ".' '.$ra_estado.', C.P. '.$ra_cp.' </li><br><br>
+
+          <li> <label>TELÉFONO OFICINA</label></li>
+          <li>'.$ra_tel.'</li><br><br>
+
+          <li><label>TELÉFONO MÓVIL</label></li>
+          <li></li><br><br>
+
+          <li> <label>CONTACTO</label> </li>
+          <li>'.$ra_nom.'</li><br><br>
+
+          <li><label>E-MAIL</label></li>
+          <li>'.$ra_correo.'</li><br><br>
+
+          '.$ra_web.'
+        </UL>   
+      </div>
+
+      
+    </div>
+    <div class="right-side">
+      <ul>
+        <li><label>FECHA</label></li>
+        <li>'.$n_fecha.'</li><br><br>
+        
+        <li><label>PARA</label></li>
+        <li>'.$cli_nombre.'</li>
+        <li>'.$cli_direccion.' </li>
+        <li>Col '.$cli_colonia.' </li>
+        <li>C.P. '.$cli_cp.', '.$cli_ciudad.',  '.$cli_estado.'</li><br><br>
+
+        <li><label>TITULO DEL PROYECTO: '.$doc_titulo.'</label></li>
+        <li><label>DESCRIPCIÓN DE PROYECTO: '.$doc_descripcion.'</label></li>
+        <li><label>REGISTRO DE OPORTUNIDAD: '.$doc_registro_op.'</label></li>
+        <li><label>REPRESENTANTE: '.$doc_representante.'</label></li>
+        <li><label>VIGENCIA: '.$doc_terminos.' DÍAS</label></li>
+        <br><br>
+
+        <li>De acuerdo a su solicitud y según lo identificado como de su interés, presentamos la siguiente Cotización No. '.$folio.'</li>
+
+        <li>DETALLE PAGO INICIAL - ÚNICA VEZ </li>
+      </ul><br><br>
+
+      <table>
+        <thead>
+          <tr>
+            <th>DESCRIPCIÓN</th>
+            <th>CANTIDAD</th>
+            <th>PRECIO/UD.</th>
+            <th>IMPORTE</th>
+          </tr>
+        </thead>
+        <tbody>
+          '.$tabla_contenido.'
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p>Sin más por el momento, agradeciendo su atención y preferencia,  quedo al pendiente de cualquier duda ó aclaración.</p>
+  <p>
+Atentamente,</p>
+</body>
+</html>
